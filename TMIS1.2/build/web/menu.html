@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles */
+    body, ul, li, a {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    /* Style for the container */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Style for the buttons */
+    a {
+      color: #333; /* Text color */
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #ecf0f1; /* White grey gloss color */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for background color and scale */
+      display: block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+    }
+
+    /* Hover effect */
+    a:hover {
+      background-color: #bdc3c7; /* Darker button color on hover */
+      transform: scale(1.1); /* Larger hover effect */
+    }
+
+    /* Focus effect */
+    a:focus {
+      outline: 2px solid #333; /* Dark outline on focus */
+      outline-offset: 5px;
+    }
+
+    /* Blur effect */
+    a:blur {
+      outline: none;
+    }
+
+    /* Adjust spacing for smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a href="add_employee.html">Add Employee</a>
+  <a href="viewUserBrief.jsp">View Employees</a>
+  <a href="updateUserBrief.jsp">Update Employee</a>
+
+  <a href="add_truck.html">Add Truck</a>
+  <a href="viewTruckBrief.jsp">View Trucks</a>
+  <a href="updateTruckBrief.jsp">Update Truck</a>
+
+  <a href="add_fuel.html">Add Fuel</a>
+  <a href="viewFuelBrief.jsp">View Fuel Entries</a>
+  <a href="updateFuelBrief.jsp">Update Fuel</a>
+
+  <a href="add_route.html">Add Route</a>
+  <a href="viewRouteBrief.jsp">View Routes</a>
+  <a href="updateRouteBrief.jsp">Update Route</a>
+
+  <a href="add_service.html">Add Service</a>
+  <a href="viewServiceBrief.jsp">View Services</a>
+  <a href="updateServiceBrief.jsp">Update Service</a>
+
+  <a href="trafficOffenceManagement.html">Add Offense</a>
+  <a href="viewtrafficOffence.jsp">View Offense</a>
+  <a href="updatetrafficOffenceManagement.jsp">Update Offense</a>
+</div>
+
+<!-- Your webpage content goes here -->
+
+</body>
+</html>
